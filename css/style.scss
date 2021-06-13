@@ -1,0 +1,162 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/bg.jpg');
+    background-size:cover;
+}
+
+
+.login {
+	position: relative;
+	padding: 40px;
+	font-family: 'Roboto', sans-serif;
+    background-color: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+	border: 2px solid transparent;
+	background-clip: padding-box;
+}
+
+.login::before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: 20px;
+}
+
+.login h1 {
+	margin: 0 0 20px;
+	font-size: 40px;
+	color: rgb(50, 83, 6);
+	text-align: center;
+}
+.form-input {
+	display: block;
+	width: 300px;
+	height: 50px;
+	margin-bottom: 20px;
+}
+.form-input input {
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px;
+	font-size: 16px;
+	color: rgb(9, 70, 3);
+
+	border: 0;
+	border-radius: 10px;
+	box-sizing: border-box;
+	background-color: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	outline: none;
+}
+.form-input input::placeholder {
+	color: rgba(11, 59, 5, 0.5);
+	transition: .3s;
+}
+.form-input input:focus::placeholder {
+	opacity: 0;
+}
+.form-button {
+	display: block;
+	margin: 0 auto;
+	padding: 15px 30px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: rgba(44, 58, 17, 0.8);
+	border: 0;
+	border-radius: 10px;
+	outline: none;
+	cursor: pointer;
+	transition: .3s ease-in-out;
+}
+.form-button:hover {
+	background-color: rgba(44, 58, 17, 1);
+}
+
+
+
+#st{
+    width: 50%;
+	height: 100%;
+	padding: 10px 20px;
+	font-size: 16px;
+	color: rgb(9, 70, 3);
+
+	border: 0;
+	border-radius: 10px;
+	box-sizing: border-box;
+	background-color: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	outline: none;
+}
+
+.split{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+
+
+
+@media only screen and (max-width: 768px)  {
+     
+      .main{
+          width: 100%;
+          background-size: cover;
+          height: 100vh;
+          margin:0;
+      }
+
+       .login{
+           width: 80%;
+    
+       }
+      
+        .login h1{
+            font-size: 26px;
+        }
+
+        .form-input{
+            display: block;
+            width: 250px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        
+        .form-input input{
+            width: 80%;
+            height: 80%;
+            
+        }
+
+
+        #st{
+            width: 100px;
+        }
+
+        .split{
+            gap: 12px;
+        }
+
+  }
